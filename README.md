@@ -1,25 +1,29 @@
 # 🌍 Discovery World
 
-A React-based web page project exploring discovery/exploration-themed design — built as part of an ongoing series of front-end practice builds focused on clean layouts, component structure, and modern UI patterns.
+A React-based exploration/discovery-themed web app, built with Vite for a fast development experience and styled with Tailwind CSS. Includes client-side routing and icon-driven UI elements for a clean, modern feel.
 
 ![Project Banner](./public/screenshot.png)
 
 ## ✨ Features
 
-- Clean, modern landing page layout
-- Component-based structure for maintainability
-- Responsive-in-progress UI (see Project Status below)
-- Built with React
-
-## 🛠 Tech Stack
-
-- **React** — UI library
-- **JavaScript (ES6+)**
-- **CSS3** — styling and layout
+- Modern, component-based layout
+- Client-side routing with React Router
+- Icon system powered by Tabler Icons
+- Utility-first styling with Tailwind CSS v4
+- Fast dev/build tooling via Vite
 
 ## 🧭 Project Status
 
 This project is under active development. Some sections and responsive breakpoints are still being refined.
+
+## 🛠 Tech Stack
+
+- **React 19** — UI library
+- **Vite** — build tool and dev server
+- **Tailwind CSS v4** — utility-first styling
+- **React Router** — client-side routing
+- **Tabler Icons (React)** — icon set
+- **ESLint** — code linting
 
 ## 🚀 Live Demo
 
@@ -52,16 +56,27 @@ npm -v
    ```
 4. Start the development server
    ```bash
-   npm start
+   npm run dev
    ```
-5. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+## 📜 Available Scripts
+
+| Command           | Description                                      |
+|-------------------|---------------------------------------------------|
+| `npm run dev`     | Runs the app in development mode with hot reload  |
+| `npm run build`   | Builds the app for production to the `dist` folder |
+| `npm run preview` | Locally previews the production build             |
+| `npm run lint`    | Runs ESLint across the project                    |
 
 ## 📁 Project Structure
 
 ```
 Discovery-World/
-├── public/          # Static assets and index.html
-├── src/             # React components, styles, and app logic
+├── public/          # Static assets
+├── src/             # React components, routes, and app logic
+├── index.html       # Vite entry HTML
+├── vite.config.js   # Vite configuration
 ├── package.json     # Project metadata and dependencies
 └── README.md
 ```
